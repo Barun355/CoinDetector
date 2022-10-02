@@ -60,7 +60,8 @@ class CoinsApp:
 
         if self.image:
             st.write('Image Uploaded Successfully')        
-            st.button('Find', on_click=self.display)
+            if st.button('Find'):
+                self.display()
         else:
             st.write('Image not loaded')
 
