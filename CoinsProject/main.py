@@ -27,8 +27,8 @@ class CoinsApp:
 
     def download(self, image):
         image = imutils.resize(image, self.w)
-        cv.imwrite('TestImage/Image.jpg', cv.cvtColor(image, cv.COLOR_BGR2RGB))
-        with open('TestImage/Image.jpg', 'rb') as file:
+        cv.imwrite('Image.jpg', cv.cvtColor(image, cv.COLOR_BGR2RGB))
+        with open('Image.jpg', 'rb') as file:
             st.download_button(
                 label='Download the image',
                 data = file,
