@@ -168,7 +168,7 @@ class CoinsApp:
             This method create the enviornment to which the user interact.
         """
         with st.sidebar:
-            image = st.selectbox('Some Sample images', self.__getlist__())
+            # image = st.selectbox('Some Sample images', self.__getlist__())
             if image is not None:
                 image = cv.imread(image)
                 self.image = image
