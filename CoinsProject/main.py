@@ -169,7 +169,7 @@ class CoinsApp:
         """
         with st.sidebar:
             # image = st.selectbox('Some Sample images', self.__getlist__())
-            if image is not None:
+            if self.image is not None:
                 image = cv.imread(image)
                 self.image = image
                 self.local = True
